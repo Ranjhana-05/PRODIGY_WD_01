@@ -1,0 +1,132 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url(pic1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+.button-container {
+    position: fixed; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    margin-bottom: 250px; 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+
+.stopwatch {
+    background-color: rgba(149, 190, 240, 0.3); 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    width: 25%;
+    margin-bottom: 200px; 
+    position: fixed;
+}
+
+#display {
+    font-size: 80px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.laps-list {
+    position: fixed;
+    bottom: 100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    list-style-type: none; 
+    padding: 20px;
+    margin: 0;
+    width: 25%; 
+    max-height: 100px;
+    overflow-y: auto;
+   
+   
+  
+}
+
+.laps-list li {
+    margin-bottom: 10px;
+   
+}
+
+button {
+    font-size: 1.2em;
+    margin: 10px;
+    padding: 12px 24px;
+    cursor: pointer;
+    background-color: #332b77;
+    color: white; 
+    border: 0.5px solid #ccc; 
+    border-radius: 8px; 
+    margin-top: 520px;
+    
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.lap-box {
+    
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+.lap-number {
+    flex: 1; 
+    text-align: left;
+    margin-left: 30px;
+}
+
+.lap-time {
+    flex: 2; 
+    text-align: center;
+    margin-right: 70px;
+}
+.laps-list::-webkit-scrollbar {
+    width: 10px; 
+    margin-left: 50px;
+}
+
+.laps-list::-webkit-scrollbar-track {
+    background: #fffefe53;
+
+}
+
+.laps-list::-webkit-scrollbar-thumb {
+    background: #574db3; 
+    border-radius: 6px;
+    width: 5px; 
+}
+
+.laps-list::-webkit-scrollbar-thumb:hover {
+    background: #3d3680; 
+}
